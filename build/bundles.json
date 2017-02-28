@@ -1,0 +1,51 @@
+{
+  "bundles": {
+    "dist/app-build": {
+      "includes": [
+        "[**/**/*.js]"
+      ],
+      "options": {
+        "inject": true,
+        "minify": true
+      }
+    },
+    "dist/vendor": {
+      "includes": [
+        "aurelia-animator-css",
+        "aurelia-bootstrapper",
+        "aurelia-event-aggregator",
+        "aurelia-framework",
+        "aurelia-fetch-client",
+        "aurelia-pal-browser",
+        "aurelia-router",
+        "aurelia-templating-binding",
+        "aurelia-polyfills",
+        "aurelia-templating-resources",
+        "aurelia-templating-router",
+        "aurelia-loader-default",
+        "aurelia-history-browser",
+        "aurelia-logging-console",
+        "bootstrap",
+        "bootstrap/css/bootstrap.css!text",
+        "fetch",
+        "jquery",
+        "d3",
+        "github:github/fetch@0.11.1",
+        "font-awesome",
+        "lodash",
+        "moment"
+      ],
+      "options": {
+        "inject": true,
+        "minify": true
+      }
+    },
+    "dist/view-bundle":{
+      "htmlimport":true,
+      "includes": "dist/**/*.html",
+      "options":{
+        "inject":true
+      }
+    }
+  }
+}
